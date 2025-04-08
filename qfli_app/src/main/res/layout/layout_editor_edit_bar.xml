@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_bar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?toolBarColor"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <!-- Cancel Button -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_ripple"
+            android:gravity="center"
+            android:src="@drawable/twotone_cancel_black_24"
+            app:tint="?toolBarTitleColor" />
+
+        <!-- Title -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_bar_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:textColor="?textColor"
+                android:textSize="20sp"
+                app:hintTextColor="?paraTextColor" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!-- Search Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/jump_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_ripple"
+            android:gravity="center"
+            android:src="@drawable/twotone_search_black_24"
+            app:tint="?toolBarTitleColor" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

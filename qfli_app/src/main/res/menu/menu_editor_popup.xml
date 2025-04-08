@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/editor_layout_helper_btn"
+        android:orderInCategory="100"
+        android:title="@string/layout_helper"
+        android:icon="@drawable/twotone_panorama_black_24"
+        app:showAsAction="always"
+        app:iconTint="?toolBarTitleColor"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/editor_play_btn"
+        android:orderInCategory="100"
+        android:title="@string/playing"
+        android:icon="@drawable/twotone_play_arrow_black_24"
+        app:showAsAction="always"
+        app:iconTint="?toolBarTitleColor"
+        app:actionLayout="@layout/layout_editor_play_btn"/>
+    <item
+        android:id="@+id/editor_undo_btn"
+        android:orderInCategory="100"
+        android:title="@string/undo"
+        android:icon="@drawable/twotone_undo_black_24"
+        app:showAsAction="always"
+        app:iconTint="?toolBarTitleColor"/>
+    <item
+        android:id="@+id/editor_redo_btn"
+        android:orderInCategory="100"
+        android:title="@string/redo"
+        android:icon="@drawable/twotone_redo_black_24"
+        app:showAsAction="ifRoom"
+        app:iconTint="?toolBarTitleColor"/>
+</menu>

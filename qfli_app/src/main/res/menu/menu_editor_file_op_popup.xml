@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/editor_copy_file_name"
+        android:orderInCategory="100"
+        android:title="@string/copy_filename"/>
+    <item
+        android:id="@+id/editor_copy_file_path"
+        android:orderInCategory="100"
+        android:title="@string/copy_filepath"/>
+    <item
+        android:id="@+id/editor_file_rename"
+        android:orderInCategory="100"
+        android:title="@string/rename_text"/>
+    <item
+        android:id="@+id/editor_file_share"
+        android:orderInCategory="100"
+        android:title="@string/share"/>
+    <item
+        android:id="@+id/editor_file_delete"
+        android:orderInCategory="100"
+        android:title="@string/delete"/>
+    <item
+        android:id="@+id/editor_file_backup"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:title="@string/local_backup_text"/>
+    <item
+        android:id="@+id/editor_compile_lua"
+        android:orderInCategory="100"
+        android:title="@string/compile_lua_file"/>
+    <item
+        android:id="@+id/editor_file_hist_version"
+        android:orderInCategory="100"
+        android:visible="false"
+        android:title="@string/file_hist_version"/>
+    <item
+        android:id="@+id/editor_file_upload_to_public_cloud"
+        android:orderInCategory="100"
+        android:visible="false"
+        android:title="@string/file_upload_to_public_cloud" />
+    <item
+        android:id="@+id/editor_file_java_compile"
+        android:orderInCategory="100"
+        android:visible="false"
+        android:title="@string/compile_java_file_text" />
+</menu>

@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/basic_blue</item>
+        <item name="colorPrimaryVariant">@color/basic_deep_blue</item>
+        <item name="colorOnPrimary">@color/pure_black</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="strokeColor">@color/white_dark</item>
+        <item name="cardBackgroundColor">?attr/colorOnPrimary</item>
+        <item name="backgroundColor">@color/pure_black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">@color/basic_blue</item>
+        <item name="android:colorAccent">?colorAccent</item>
+
+        <item name="android:statusBarColor">?colorPrimary</item>
+
+        <item name="cardViewStyle">@style/Widget.Azure.CardView</item>
+        <item name="materialCardViewStyle">@style/Widget.Azure.CardView</item>
+        <item name="buttonStyle">@style/Widget.Azure.Button</item>
+        <item name="tabStyle">@style/Widget.Azure.TabLayout</item>
+        <item name="materialAlertDialogTheme">@style/Alert.Azure.Dialog</item>
+
+        <item name="cornerRadius">8dp</item>
+        <item name="cardCornerRadius">?cornerRadius</item>
+        <item name="dialogCornerRadius">?cornerRadius</item>
+        <item name="popupMenuCornerRadius">4dp</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Base.Theme.LuaStudio" parent="Base.Theme">
+        <item name="cardBackgroundColor">?attr/colorOnPrimary</item>
+        <item name="backgroundColor">@color/pure_black</item>
+        <item name="colorOnPrimary">@color/pure_black</item>
+        <item name="windowLightStatusBar">false</item>
+        <item name="windowLightNavigationBar">false</item>
+    </style>
+</resources>

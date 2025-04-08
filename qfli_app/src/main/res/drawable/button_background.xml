@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/drawable/button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> <!-- 波纹的颜色 -->
+    <item>
+        <!-- 设置背景颜色为蓝色，并且有描边、圆角，去掉阴影 -->
+        <shape android:shape="rectangle">
+            <!-- 背景颜色 -->
+            <solid android:color="#2196F3" /> <!-- 蓝色 -->
+            <!-- 设置圆角 -->
+            <corners android:radius="10dp" /> <!-- 圆角半径 -->
+            <!-- 设置边框描边 -->
+            <stroke android:width="1dp" android:color="#FFFFFF" />
+        </shape>
+    </item>
+</selector>

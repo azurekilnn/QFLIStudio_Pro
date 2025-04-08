@@ -1,0 +1,23 @@
+{
+  LinearLayoutCompat;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+  backgroundColor=get_theme_color("background_color");
+  tool_bar;
+  {
+    SwipeRefreshLayout,
+    --layout_marginTop="15dp";
+    id="help_roster_pull",
+    {
+      NoScrollListView;
+      layout_width="fill";
+      layout_height="fill";
+      backgroundColor=gray_color;
+      paddingTop="10dp";
+      id="help_roster_listview";
+      DividerHeight="0";
+      FastScrollEnabled=false;
+    };
+  };
+};

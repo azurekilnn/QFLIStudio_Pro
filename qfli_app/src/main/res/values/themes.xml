@@ -1,0 +1,359 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.NewTheme" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.QFLIStudio" parent="Base.Theme" />
+
+    <style name="Base.Theme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorAccent">@color/basic_blue</item>
+        <item name="colorPrimary">@color/basic_blue</item>
+        <item name="colorPrimaryDark">@color/basic_deep_blue</item>
+        <item name="colorPrimaryVariant">@color/basic_deep_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">?colorPrimary</item>
+        <item name="colorSecondaryVariant">?colorPrimary</item>
+        <item name="strokeColor">@color/white_dark</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+
+        <item name="rippleColor">@color/blue_ripple</item>
+        <item name="rippleColorAccent">@color/blue_ripple</item>
+        <item name="rippleColorPrimary">@color/black_ripple</item>
+        <item name="windowBackgroundColor">?backgroundColor</item>
+        <item name="navigationViewColorAccent">?colorAccent</item>
+
+        <item name="android:colorAccent">?colorAccent</item>
+        <item name="android:titleTextAppearance">@style/ThemeOverlay.AzureKiln.ActionBar.Text</item>
+        <item name="android:textColorHint">#FF888888</item>
+        <item name="android:windowBackground">?windowBackgroundColor</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+
+        <item name="bottomNavigationStyle">@style/Widget.Azure.BottomNavigationView</item>
+        <item name="chipStyle">@style/Widget.Azure.Chip</item>
+        <item name="cardViewStyle">@style/Widget.Azure.CardView</item>
+        <item name="materialCardViewStyle">@style/Widget.Azure.CardView</item>
+        <item name="buttonStyle">@style/Widget.Azure.Button</item>
+        <item name="materialButtonStyle">@style/Widget.Azure.Button</item>
+        <item name="tabStyle">@style/Widget.Azure.TabLayout</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Azure.AlertDialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Azure.BottomSheetDialog</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="cardCornerRadius">?cornerRadius</item>
+        <item name="dialogCornerRadius">?cornerRadius</item>
+        <item name="popupMenuCornerRadius">4dp</item>
+
+        <item name="grayColor">@color/basic_gray</item>
+        <item name="paraTextColor">#424242</item>
+        <item name="textColor">@color/black</item>
+        <item name="cardColor">?grayColor</item>
+        <item name="cardIconColor">#000000</item>
+
+        <!-- statusBar -->
+        <item name="windowLightStatusBar">false</item>
+        <item name="windowLightNavigationBar">false</item>
+        <!-- 自定义布局属性 -->
+        <item name="toolBarColor">@color/white</item>
+        <item name="toolBarTitleColor">?colorAccent</item>
+        <item name="bottomBarTextColor">@color/black</item>
+
+        <item name="termuxActivityDrawerBackground">@color/white</item>
+        <item name="termuxActivityDrawerImageTint">@color/black</item>
+    </style>
+
+    <style name="Base.Theme.LuaStudio" parent="Base.Theme">
+        <item name="windowLightStatusBar">false</item>
+        <item name="windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="Theme_LuaStudio" parent="Base.Theme.LuaStudio">
+        <!-- statusBar -->
+        <item name="windowActionBar">true</item>
+        <item name="windowLightNavigationBar">false</item>
+        <item name="tabStyle">@style/Widget.Azure.Default.TabLayout</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Basic" parent="Theme_LuaStudio">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme_LuaStudio.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowLightStatusBar">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+
+    <style name="Theme_LuaStudio_1" parent="Base.Theme" />
+
+    <style name="Theme_LuaStudio_Light" parent="Theme_LuaStudio" />
+
+    <style name="Theme_LuaStudio_Night" parent="Theme_LuaStudio">
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="ThemeProgressDialogStyle" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:indeterminateTint">?attr/colorPrimary</item>
+    </style>
+
+
+    <style name="Theme_LuaStudio_1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio_Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio_Night.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BootTheme_LuaStudio" parent="@android:style/Theme.Translucent.NoTitleBar" />
+
+    <style name="BootTheme_LuaStudio_2" parent="Theme_LuaStudio.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@drawable/drawable_boot</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme_LuaStudio.Red" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_red</item>
+        <item name="colorAccent">@color/basic_red</item>
+        <item name="rippleColorAccent">@color/red_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Pink" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_pink</item>
+        <item name="colorAccent">@color/basic_pink</item>
+        <item name="rippleColorAccent">@color/pink_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Purple" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_purple</item>
+        <item name="colorAccent">@color/basic_purple</item>
+        <item name="rippleColorAccent">@color/purple_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Indigo" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_indigo</item>
+        <item name="colorAccent">@color/basic_indigo</item>
+        <item name="rippleColorAccent">@color/indigo_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.LightBlue" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_light_blue</item>
+        <item name="colorAccent">@color/basic_light_blue</item>
+        <item name="rippleColorAccent">@color/light_blue_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Cyan" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_cyan</item>
+        <item name="colorAccent">@color/basic_cyan</item>
+        <item name="rippleColorAccent">@color/cyan_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Teal" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_teal</item>
+        <item name="colorAccent">@color/basic_teal</item>
+        <item name="rippleColorAccent">@color/teal_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Green" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_green</item>
+        <item name="colorAccent">@color/basic_green</item>
+        <item name="rippleColorAccent">@color/green_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.LightGreen" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_light_green</item>
+        <item name="colorAccent">@color/basic_light_green</item>
+        <item name="rippleColorAccent">@color/light_green_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Lime" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_lime</item>
+        <item name="colorAccent">@color/basic_lime</item>
+        <item name="rippleColorAccent">@color/lime_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Yellow" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_yellow</item>
+        <item name="colorAccent">@color/basic_yellow</item>
+        <item name="rippleColorAccent">@color/yellow_ripple</item>
+        <item name="windowLightStatusBar">true</item>
+        <item name="windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Amber" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_amber</item>
+        <item name="colorAccent">@color/basic_amber</item>
+        <item name="rippleColorAccent">@color/amber_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Orange" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_orange</item>
+        <item name="colorAccent">@color/basic_orange</item>
+        <item name="rippleColorAccent">@color/orange_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.DeepOrange" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_deep_orange</item>
+        <item name="colorAccent">@color/basic_deep_orange</item>
+        <item name="rippleColorAccent">@color/deep_orange_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Brown" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_brown</item>
+        <item name="colorAccent">@color/basic_brown</item>
+        <item name="rippleColorAccent">@color/brown_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Grey" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_grey</item>
+        <item name="colorAccent">@color/basic_grey</item>
+        <item name="rippleColorAccent">@color/grey_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.BlueGrey" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/basic_blue_grey</item>
+        <item name="colorAccent">@color/basic_blue_grey</item>
+        <item name="rippleColorAccent">@color/blue_grey_ripple</item>
+    </style>
+
+    <style name="Theme_LuaStudio.White" parent="Theme_LuaStudio.Basic">
+        <item name="colorPrimary">@color/white</item>
+        <item name="rippleColorAccent">@color/white_ripple</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AzureKiln.ActionBar</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+        <item name="windowLightStatusBar">true</item>
+        <item name="windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Red.NoActionBar" parent="Theme_LuaStudio.Red">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Pink.NoActionBar" parent="Theme_LuaStudio.Pink">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Purple.NoActionBar" parent="Theme_LuaStudio.Purple">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Indigo.NoActionBar" parent="Theme_LuaStudio.Indigo">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.LightBlue.NoActionBar" parent="Theme_LuaStudio.LightBlue">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Cyan.NoActionBar" parent="Theme_LuaStudio.Cyan">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Teal.NoActionBar" parent="Theme_LuaStudio.Teal">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Green.NoActionBar" parent="Theme_LuaStudio.Green">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.LightGreen.NoActionBar" parent="Theme_LuaStudio.LightGreen">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Lime.NoActionBar" parent="Theme_LuaStudio.Lime">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Yellow.NoActionBar" parent="Theme_LuaStudio.Yellow">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Amber.NoActionBar" parent="Theme_LuaStudio.Amber">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Orange.NoActionBar" parent="Theme_LuaStudio.Orange">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.DeepOrange.NoActionBar" parent="Theme_LuaStudio.DeepOrange">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Brown.NoActionBar" parent="Theme_LuaStudio.Brown">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.Grey.NoActionBar" parent="Theme_LuaStudio.Grey">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.BlueGrey.NoActionBar" parent="Theme_LuaStudio.BlueGrey">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_LuaStudio.White.NoActionBar" parent="Theme_LuaStudio.White">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

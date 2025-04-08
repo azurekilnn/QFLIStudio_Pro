@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="basic_red">#FFF44336</color>
+    <color name="red_ripple">#22F44336</color>
+
+    <color name="basic_pink">#E91E63</color>
+    <color name="pink_ripple">#22E91E63</color>
+
+    <color name="basic_purple">#9C27B0</color>
+    <color name="purple_ripple">#229C27B0</color>
+
+    <color name="basic_deep_purple">#673AB7</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="deep_purple_ripple">#22673AB7</color>
+
+    <color name="basic_indigo">#3F51B5</color>
+    <color name="indigo_ripple">#223F51B5</color>
+
+    <color name="basic_blue">#2196F3</color>
+    <color name="blue_50">#E3F2FD</color>
+    <color name="blue_100">#BBDEFB</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_300">#64B5F6</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="blue_600">#1E88E5</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="blue_800">#1565C0</color>
+    <color name="blue_900">#0D47A1</color>
+    <color name="blue_a100">#82B1FF</color>
+    <color name="blue_a200">#448AFF</color>
+    <color name="blue_a400">#2979FF</color>
+    <color name="blue_a700">#2962FF</color>
+    <color name="blue_ripple">#3f448aff</color>
+
+    <color name="basic_light_blue">#03A9F4</color>
+    <color name="light_blue_ripple">#2203A9F4</color>
+
+    <color name="basic_cyan">#00BCD4</color>
+    <color name="cyan_ripple">#2200BCD4</color>
+
+    <color name="basic_teal">#009688</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_ripple">#22009688</color>
+
+    <color name="basic_green">#4CAF50</color>
+    <color name="green_ripple">#224CAF50</color>
+
+    <color name="basic_light_green">#8BC34A</color>
+    <color name="light_green_ripple">#228BC34A</color>
+
+    <color name="basic_lime">#CDDC39</color>
+    <color name="lime_ripple">#22CDDC39</color>
+
+    <color name="basic_yellow">#FFEB3B</color>
+    <color name="yellow_ripple">#22FFEB3B</color>
+
+    <color name="basic_amber">#FFC107</color>
+    <color name="amber_ripple">#22FFC107</color>
+
+    <color name="basic_orange">#FF9800</color>
+    <color name="orange_ripple">#22FF9800</color>
+
+    <color name="basic_deep_orange">#FF5722</color>
+    <color name="deep_orange_ripple">#22FF5722</color>
+
+    <color name="basic_brown">#795548</color>
+    <color name="brown_ripple">#22795548</color>
+
+    <color name="basic_grey">#9E9E9E</color>
+    <color name="grey_ripple">#229E9E9E</color>
+
+    <color name="basic_blue_grey">#607D8B</color>
+    <color name="blue_grey_ripple">#22607D8B</color>
+
+    <color name="black">#000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_ripple">#44ffffff</color>
+
+
+    <color name="blurred_background_color">#80FFFFFF</color>
+
+
+
+
+
+
+
+
+    <color name="basic_deep_blue">#1976D2</color>
+
+
+
+
+
+    <color name="pure_black">#FF000000</color>
+    <color name="black_ripple">#22000000</color>
+
+    <color name="colorPrimary">#FF448AFF</color>
+    <color name="colorPrimaryDark">#FF448AFF</color>
+    <color name="colorAccent">#FFE91E63</color>
+
+    <color name="blue">#FF448AFF</color>
+    <color name="red">#FFC60B26</color>
+
+    <color name="textActionNameColor">@android:color/tertiary_text_light</color>
+    <color name="defaultSymbolInputBackgroundColor">@android:color/background_light</color>
+    <color name="defaultSymbolInputTextColor">@android:color/black</color>
+
+    <color name="white_dark">#FFE0E0E0</color>
+
+
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <!--半透明-->
+    <color name="translucent">#22050505</color>
+
+    <color name="mtrl_text_input_default_box_stroke_color" tools:override="true">?colorPrimary</color>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/right_sidebar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="?toolBarColor"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="@string/mode_title"
+                android:textColor="?toolBarTitleColor"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?backgroundColor"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/right_sidebar_recycler_view">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?backgroundColor"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/dl_btm_nightmode_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/square_ripple"
+                android:gravity="center"
+                android:src="@drawable/twotone_brightness_4_black_24"
+                app:tint="?toolBarTitleColor" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/dl_btm_about_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/square_ripple"
+                android:gravity="center"
+                android:src="@drawable/twotone_info_black_24"
+                app:tint="?toolBarTitleColor" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/dl_btm_settings_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/square_ripple"
+                android:gravity="center"
+                android:src="@drawable/twotone_settings_black_24"
+                app:tint="?toolBarTitleColor" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/dl_btm_exit_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/square_ripple"
+                android:gravity="center"
+                android:src="@drawable/twotone_exit_to_app_black_24"
+                app:tint="?toolBarTitleColor" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qflistudio.azure.ui.MainActivity">
+    <item
+        android:id="@+id/main_create_project"
+        android:orderInCategory="100"
+        android:title="@string/create_project"
+        app:showAsAction="never" />
+</menu>

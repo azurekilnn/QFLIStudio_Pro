@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="?toolBarColor"
+        android:elevation="1dp"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cancel Button -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/search_bar_cancel_btn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/circular_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/twotone_cancel_black_24"
+                    app:tint="?toolBarTitleColor" />
+                <!-- Title -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/search_bar_search_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:hint="@string/find_text"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <EditText
+                        android:id="@+id/search_bar_replace_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:hint="@string/replace_text"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_goto_prev"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/circular_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/twotone_arrow_circle_up_black_24"
+                    app:tint="?toolBarTitleColor" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_goto_next"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/circular_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/twotone_arrow_circle_down_black_24"
+                    app:tint="?toolBarTitleColor" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_option_match_case_btn"
+                    style="?buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/search_option_match_case_show_text"
+                    android:textAllCaps="false"
+                    android:textColor="?toolBarTitleColor" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_option_whole_word_btn"
+                    style="?buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/search_option_whole_word_show_text"
+                    android:textColor="?toolBarTitleColor" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_option_regex_btn"
+                    style="?buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/search_option_regex_show_text"
+                    android:textColor="?toolBarTitleColor" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_replace"
+                    style="?buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/editor_search_tv_replace"
+                    android:textColor="?toolBarTitleColor"
+                    app:rippleColor="?rippleColorAccent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_replace_all"
+                    style="?buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/editor_search_tv_replaceAll"
+                    android:textColor="?toolBarTitleColor"
+                    app:rippleColor="?rippleColorAccent" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

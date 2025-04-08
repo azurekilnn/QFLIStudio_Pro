@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Alert.Azure.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">?colorPrimaryDark</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Alert.Azure.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">?colorPrimary</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Alert.Azure.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearanceMediumComponent">@style/RoundShapeAppearance.Azure</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Azure.Button.Positive</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Azure.Button.Neutral</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <!-- ActionBar -->
+    <style name="ThemeOverlay.AzureKiln.ActionBar.Text" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/basic_blue</item>
+    </style>
+
+    <style name="ThemeOverlay.AzureKiln.ActionBar" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="colorControlNormal">@color/basic_blue</item>
+        <item name="rippleColorPrimary">@color/blue_ripple</item>
+        <item name="elevation">4dp</item>
+        <item name="titleTextStyle">@style/ThemeOverlay.AzureKiln.ActionBar.Text</item>
+    </style>
+
+    <style name="Widget.Azure.MaterialCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?cardBackgroundColor</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="strokeColor">?strokeColor</item>
+        <item name="strokeWidth">@dimen/cardview_stroke_size</item>
+    </style>
+
+    <style name="Widget.Azure.Button" parent="Widget.MaterialComponents.Button">
+        <!-- 设置按钮背景颜色为红色 -->
+        <item name="android:background">?backgroundColor</item>
+        <!-- 设置按钮按下时的波纹颜色为蓝色 -->
+        <item name="android:colorControlHighlight">?rippleColorAccent</item>
+    </style>
+
+    <style name="Widget.Azure.CardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?cardBackgroundColor</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="strokeColor">?strokeColor</item>
+        <item name="strokeWidth">@dimen/cardview_stroke_size</item>
+    </style>
+
+
+
+    <style name="Widget.Azure.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Widget.Azure.TabLayout.Colored" parent="Widget.MaterialComponents.TabLayout.Colored">
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <style name="Widget.Azure.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">?colorPrimary</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearanceMediumComponent">@style/RoundShapeAppearance.Azure</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Azure.Button.Positive</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Azure.Button.Neutral</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="BottomSheetFullScreenTheme" parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/bottomSheetStyleFullScreenWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="bottomSheetStyleFullScreenWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_peekHeight">3000dp</item>
+    </style>
+
+
+    <style name="RoundShapeAppearance.Azure" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

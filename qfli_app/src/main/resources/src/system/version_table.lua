@@ -1,0 +1,22 @@
+tool_version={
+  import_analysis={
+    name=gets("import_analysis"),
+    version="2.0",
+    code="20220204",
+  },
+  color_perference={
+    name=gets("color_perference_title"),
+    version="2.0",
+    code="20220204",
+  },
+  lua_doc={
+    name=gets("lua_doc_title"),
+    version="2.0",
+    code="20220204",
+  },
+  help_roster={
+    name=gets("help_roster"),
+    version="2.0",
+    code="20220204",
+  }
+}

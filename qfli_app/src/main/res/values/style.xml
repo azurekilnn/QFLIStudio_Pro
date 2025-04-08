@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 按钮样式 -->
+    <style name="Widget.Azure.Button" parent="Widget.MaterialComponents.Button">
+        <!-- 设置背景颜色 -->
+        <item name="backgroundTint">?colorAccent</item>
+        <!-- 设置字体颜色为白色 -->
+        <item name="android:textColor">@color/white</item>
+        <!-- 设置圆角 -->
+        <item name="cornerRadius">10dp</item>
+        <!-- 设置文本大小 (可选) -->
+        <item name="android:textSize">16sp</item>
+        <!-- 设置按钮按下时的波纹颜色为蓝色 -->
+        <item name="android:colorControlHighlight">?rippleColorAccent</item>
+        <!-- 设置按下时的透明度 -->
+        <item name="android:stateListAnimator">@animator/button_state_selector</item>
+    </style>
+
+    <style name="Widget.Azure.NegativeButton" parent="Widget.Azure.Button">
+        <!-- 设置背景颜色 -->
+        <item name="backgroundTint">@color/white</item>
+        <!-- 设置字体颜色为白色 -->
+        <item name="android:textColor">?colorPrimary</item>
+        <!-- 设置边框颜色 -->
+        <item name="strokeColor">?colorPrimary</item>
+        <!-- 设置边框宽度 -->
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="ThemeOverlay.Azure.AlertDialog.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">?colorAccent</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ThemeOverlay.Azure.AlertDialog.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">?colorPrimary</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ThemeOverlay.Azure.AlertDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <!-- 设置内边距 -->
+        <!-- <item name="android:padding">2dp</item> -->
+        <!-- 设置圆角背景 -->
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="shapeAppearanceOverlay">@style/RoundShapeAppearance.Azure</item>
+        <!-- 自定义按钮样式 -->
+        <item name="buttonBarPositiveButtonStyle">@style/ThemeOverlay.Azure.AlertDialog.Button.Positive</item>
+        <item name="buttonBarNeutralButtonStyle">@style/ThemeOverlay.Azure.AlertDialog.Button.Neutral</item>
+    </style>
+
+    <style name="ThemeOverlay.Azure.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+        <item name="materialButtonStyle">@style/Widget.Azure.Button</item>
+    </style>
+
+
+
+    <style name="BottomSheetDialogTheme" parent="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+        <item name="materialButtonStyle">@style/Widget.Azure.Button</item>
+    </style>
+
+    <!-- ActionBar -->
+    <!-- 自定义ActionBar样式 -->
+    <style name="ThemeOverlay.AzureKiln.NewActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <!-- ActionBar的背景颜色 -->
+        <item name="background">@color/basic_blue</item> <!-- 你可以换成你需要的颜色 -->
+        <!-- ActionBar的字体颜色 -->
+        <item name="android:textColor">@color/white</item> <!-- 设置为白色 -->
+    </style>
+
+
+    <style name="ThemeOverlay.AzureKiln.ActionBar.Text" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/basic_blue</item>
+    </style>
+
+    <style name="ThemeOverlay.AzureKiln.ActionBar" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="colorControlNormal">@color/basic_blue</item>
+        <item name="rippleColorPrimary">@color/blue_ripple</item>
+        <item name="elevation">4dp</item>
+        <item name="titleTextStyle">@style/ThemeOverlay.AzureKiln.ActionBar.Text</item>
+    </style>
+
+    <style name="Widget.Azure.MaterialCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?cardBackgroundColor</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="strokeColor">?strokeColor</item>
+        <item name="strokeWidth">@dimen/cardview_stroke_size</item>
+    </style>
+
+    <style name="Widget.Azure.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/navigation_item_icon_tint</item>
+        <item name="itemTextColor">@color/navigation_item_text_color</item>
+    </style>
+
+
+
+
+
+
+
+
+    <style name="Widget.Azure.CardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?cardBackgroundColor</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="strokeColor">?strokeColor</item>
+        <item name="strokeWidth">@dimen/cardview_stroke_size</item>
+    </style>
+
+    <style name="Widget.Azure.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipStrokeWidth">@dimen/mtrl_btn_stroke_size</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipCornerRadius">?cardCornerRadius</item>
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="rippleColor">@color/chip_ripple_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="android:elevation">-4dp</item>
+    </style>
+
+    <style name="Widget.Azure.Default.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">?backgroundColor</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <!-- 修改字体颜色 -->
+<!--        <item name="android:textColor">?toolBarTitleColor</item> &lt;!&ndash; 未选中字体颜色 &ndash;&gt;-->
+        <item name="tabSelectedTextColor">?toolBarTitleColor</item> <!-- 选中字体颜色 -->
+        <!-- 修改指示条颜色 -->
+        <item name="tabIndicatorColor">?toolBarTitleColor</item> <!-- 指示条颜色 -->
+    </style>
+
+    <style name="Widget.Azure.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">?backgroundColor</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Widget.Azure.TabLayout.Colored" parent="Widget.MaterialComponents.TabLayout.Colored">
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <style name="Widget.Azure.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">?colorPrimary</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearanceMediumComponent">@style/RoundShapeAppearance.Azure</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ThemeOverlay.Azure.AlertDialog.Button.Positive</item>
+        <item name="buttonBarNeutralButtonStyle">@style/ThemeOverlay.Azure.AlertDialog.Button.Neutral</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="BottomSheetFullScreenTheme" parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/bottomSheetStyleFullScreenWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="bottomSheetStyleFullScreenWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_peekHeight">3000dp</item>
+    </style>
+
+    <style name="diagnostic_popup_animation">
+        <item name="android:windowEnterAnimation">@anim/anim_diagnostic_tooltip_window_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_diagnostic_tooltip_window_exit</item>
+    </style>
+
+    <style name="RoundShapeAppearance.Azure" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditorOpTabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">?paraTextColor</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+
+    <style name="text_action_popup_animation">
+        <item name="android:windowEnterAnimation">@anim/anim_text_action_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_text_action_popup_exit</item>
+    </style>
+
+
+    <!--Base ToolBar Style -->
+    <style name="BaseToolBarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="backgroundColor">?colorPrimary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">?hintTextColor</item>
+        <item name="subtitleTextStyle">@style/BaseToolBarSubTitleStyle</item>
+        <item name="titleTextStyle">@style/BaseToolBarTitleStyle</item>
+        <item name="android:textColorSecondary">@color/theme_default_hintTextColor</item>
+        <item name="android:titleTextColor" tools:targetApi="m">?colorPrimary</item>
+    </style>
+    <!--Base ToolBar Title Style -->
+    <style name="BaseToolBarTitleStyle">
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--Base ToolBar SubTitle Style -->
+    <style name="BaseToolBarSubTitleStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="EditorToolBarSubTitleStyle" >
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="BaseToolBarPopupMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

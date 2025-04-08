@@ -1,0 +1,21 @@
+{
+  LinearLayoutCompat;
+  layout_width="fill",
+  orientation="vertical",
+  tool_bar,
+  {
+    LinearLayoutCompat;
+    layout_width="fill",
+    orientation="vertical",
+    layout_height="fill";
+    id="dc";
+    {
+      ListView;
+      layout_width="fill";
+      layout_height="fill";
+      layout_margin="15dp";
+      id="permission_list";
+      DividerHeight="0";
+    };
+  };
+}

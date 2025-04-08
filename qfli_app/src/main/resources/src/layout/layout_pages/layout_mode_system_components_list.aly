@@ -1,0 +1,29 @@
+{
+  FrameLayout,
+  layout_width="fill",
+  layout_height="fill",
+  create_empty_tips("empty_tips_4","empty_tips_4_tv",gets("no_system_component_tips"));
+  create_progressbar("progress_bar_4",true);
+  {
+    LinearLayoutCompat;
+    layout_width='fill';
+    layout_height='fill';
+    id="activities_recyclerview_background";
+    Visibility="8";
+    layoutTransition=newLayoutTransition();
+    {
+      SwipeRefreshLayout,
+      id="pull_4",
+      {
+        RecyclerView;
+        layout_height="fill";
+        layout_width="fill";
+        paddingLeft="8dp";
+        paddingBottom="56dp";
+        paddingRight="8dp";
+        id="activities_recyclerview";
+        clipToPadding=false;
+      };
+    };
+  };
+};

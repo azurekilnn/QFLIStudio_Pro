@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/choose_line_tab"
+        android:title="@string/choose_line_tab" />
+    <item
+        android:id="@+id/copy_line_tab"
+        android:title="@string/copy_line_tab" />
+    <item
+        android:id="@+id/cut_line_tab"
+        android:title="@string/cut_line_tab" />
+    <item
+        android:id="@+id/delete_line_tab"
+        android:title="@string/delete_line_tab" />
+    <item
+        android:id="@+id/repeat_line_tab"
+        android:title="@string/repeat_line_tab" />
+    <item
+        android:id="@+id/clear_line_tab"
+        android:title="@string/clear_line_tab" />
+    <item
+        android:id="@+id/comment_line_tab"
+        android:title="@string/comment_line_tab" />
+</menu>

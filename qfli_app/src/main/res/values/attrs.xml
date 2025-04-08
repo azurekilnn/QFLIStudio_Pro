@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorAccent" format="color"/>
+    <attr name="colorSecondary" format="color"/>
+    <attr name="backgroundColor" format="color"/>
+    <attr name="bottomBarTextColor" format="color"/>
+    <attr name="colorPrimary" format="color"/>
+      <attr name="toolBarColor" format="color"/>
+    <attr name="toolBarTitleColor" format="color"/>
+    <attr name="grayColor" format="color"/>
+    <attr name="paraTextColor" format="color"/>
+
+    <attr name="rippleDrawable" format="color"/>
+    <attr name="cardIconColor" format="color"/>
+
+    <attr name="cardColor" format="color"/>
+    <attr name="textColor" format="color"/>
+
+    <attr name="rippleColorAccent" format="color"/>
+    <attr name="rippleColorPrimary" format="color"/>
+    <attr name="windowBackgroundColor" format="color"/>
+    <attr name="windowLightStatusBar" format="boolean" />
+    <attr name="windowLightNavigationBar" format="boolean" />
+    <attr name="navigationViewColorAccent" format="color"/>
+    <attr name="popupMenuCornerRadius" format="dimension" />
+
+    <declare-styleable name="SVGImageView">
+        <!-- Location of the SVG document. -->
+        <attr name="svg" format="reference|string"/>
+        <attr name="css" format="string"/>
+    </declare-styleable>
+
+
+    <!-- Style attribute for CodeEditor -->
+    <attr name="codeEditorStyle" format="reference" />
+
+    <declare-styleable name="CodeEditor">
+        <attr name="android:scrollbarTrackHorizontal" />
+        <attr name="android:scrollbarThumbHorizontal" />
+        <attr name="android:scrollbarTrackVertical" />
+        <attr name="android:scrollbarThumbVertical" />
+
+        <attr name="lnPanelPositionMode">
+            <enum name="fixed" value="0" />
+            <enum name="follow" value="1" />
+        </attr>
+        <attr name="lnPanelPosition">
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+            <flag name="center" value="15" />
+        </attr>
+
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="lineNumberVisible" format="boolean" />
+        <attr name="autoCompleteEnabled" format="boolean" />
+        <attr name="symbolCompletionEnabled" format="boolean" />
+        <attr name="cursorBlinkPeriod" format="integer" />
+        <attr name="scrollbarsEnabled" format="boolean" />
+        <attr name="verticalScrollbarEnabled" format="boolean" />
+        <attr name="horizontalScrollbarEnabled" format="boolean" />
+    </declare-styleable>
+
+</resources>

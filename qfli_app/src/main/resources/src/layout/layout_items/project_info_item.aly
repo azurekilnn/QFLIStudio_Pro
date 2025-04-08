@@ -1,0 +1,30 @@
+{--project_info_item
+  LinearLayoutCompat;
+  layout_width="fill",
+  layout_height="-2",
+  gravity="center|left";
+  {
+    TextView;
+    Typeface=load_font("bold");
+    textSize="14sp";
+    textColor=text_color;
+    paddingLeft="16dp";
+    id="tip_text";
+  };
+  {
+    TextView;
+    textSize="12sp";
+    Typeface=load_font("common");
+    layout_gravity="center";
+    Selected=true;--文本可选
+    ellipsize='start';
+    singleLine=true;--单行显示
+    gravity="left";
+    textColor=get_theme_color("paratext_color");
+    layout_marginTop="4dp";
+    layout_marginLeft="12dp";
+    layout_marginRight="16dp";
+    layout_marginBottom="4dp";
+    id="content_text";
+  };
+};

@@ -1,0 +1,34 @@
+<!--menu_main_bottom_nav.xml-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/twotone_home_black_24"
+        android:title="@string/home"
+        android:background="@android:color/transparent"
+        android:tint="?attr/colorPrimary" />
+
+    <item
+        android:id="@+id/navigation_widgets"
+        android:icon="@drawable/twotone_widgets_black_24"
+        android:title="@string/tools_text"
+        android:background="@android:color/transparent"
+        android:tint="?attr/colorPrimary" />
+    <item
+        android:id="@+id/navigation_recycle_bin"
+        android:icon="@drawable/twotone_recycling_black_24"
+        android:title="@string/recycle_bin_text"
+        android:background="@android:color/transparent"
+        android:tint="?colorPrimary" />
+    <item
+        android:id="@+id/navigation_cloud"
+        android:icon="@drawable/twotone_cloud_black_24"
+        android:title="@string/cloud_text"
+        android:background="@android:color/transparent"
+        android:tint="?attr/colorPrimary" />
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/twotone_account_circle_black_24"
+        android:title="@string/my_account"
+        android:background="@android:color/transparent"
+        android:tint="?attr/colorPrimary" />
+</menu>

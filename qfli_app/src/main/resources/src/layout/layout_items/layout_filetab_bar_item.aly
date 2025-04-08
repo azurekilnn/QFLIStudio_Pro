@@ -1,0 +1,30 @@
+{
+  LinearLayoutCompat;
+  background=get_theme_color("tool_bar_color");
+  {
+    LinearLayoutCompat;
+    background=get_theme_color("tool_bar_color");
+    id="item";
+    {
+      TextView,
+      id="file_content",
+      textSize="14sp",
+      textColor=system_title_color();
+      paddingLeft="10dp",
+      paddingRight="10dp",
+      paddingTop="4dp",
+      paddingBottom="4dp",
+      layout_height="wrap",
+    },
+    {
+      TextView,
+      id="file_type",
+      Visibility=8,
+    },
+    {
+      TextView,
+      id="file_path",
+      Visibility=8,
+    }
+  }
+}

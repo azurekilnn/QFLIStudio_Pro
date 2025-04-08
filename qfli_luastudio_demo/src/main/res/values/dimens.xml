@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+
+    <dimen name="cardview_stroke_size">1.0dip</dimen>
+
+    <dimen name="cardview_compat_inset_shadow">1.0dip</dimen>
+    <dimen name="cardview_default_elevation">0.0dip</dimen>
+    <dimen name="cardview_default_radius">8.0dip</dimen>
+
+</resources>

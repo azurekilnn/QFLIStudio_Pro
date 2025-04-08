@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 允许访问应用私有 files 目录 (data/data/你的包名/files/) -->
+    <files-path name="internal_files" path="." />
+
+    <!-- 允许访问应用私有缓存目录 (data/data/你的包名/cache/) -->
+    <cache-path name="cache" path="." />
+
+    <!-- 允许访问外部存储的特定目录 -->
+    <external-path name="downloads" path="Download/" />
+    <external-path name="documents" path="Documents/" />
+
+    <!-- 允许访问 QFLIStudio_Pro 目录 -->
+    <external-path name="qflistudio" path="QFLIStudio_Pro/" />
+    <external-path name="qflistudio_cache" path="QFLIStudio_Pro/cache" />
+
+    <!-- 允许访问应用在外部存储的私有目录 (/storage/emulated/0/Android/data/你的包名/files/) -->
+    <external-files-path name="external_files" path="." />
+</paths>

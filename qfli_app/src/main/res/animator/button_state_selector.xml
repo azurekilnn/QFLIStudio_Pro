@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/animator/button_state_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按钮被按下时的动画 -->
+    <item android:state_pressed="true">
+        <objectAnimator
+            android:propertyName="alpha"
+            android:valueFrom="1.0"
+            android:valueTo="0.5"
+            android:duration="100"/>
+    </item>
+
+    <!-- 按钮处于聚焦状态时的动画 -->
+    <item android:state_focused="true">
+        <objectAnimator
+            android:propertyName="alpha"
+            android:valueFrom="1.0"
+            android:valueTo="0.8"
+            android:duration="100"/>
+    </item>
+
+    <!-- 默认状态下的动画 -->
+    <item>
+        <objectAnimator
+            android:propertyName="alpha"
+            android:valueFrom="1.0"
+            android:valueTo="1.0"
+            android:duration="100"/>
+    </item>
+</selector>

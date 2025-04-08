@@ -1,0 +1,13 @@
+{
+  LinearLayoutCompat;
+  id="progressbar_background";
+  orientation="vertical";
+  layout_height="fill";
+  layout_width="fill";
+  gravity="center";
+  {
+    ProgressBar;
+    layout_gravity="center";
+    id="progressbar";
+  }
+};

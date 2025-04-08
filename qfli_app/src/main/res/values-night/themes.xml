@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.NewTheme" parent="Theme.Material3.DayNight">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorAccent">@color/basic_blue</item>
+        <item name="colorPrimary">@color/basic_blue</item>
+        <item name="colorPrimaryDark">@color/basic_deep_blue</item>
+        <item name="colorPrimaryVariant">@color/basic_deep_blue</item>
+        <item name="colorOnPrimary">@color/pure_black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="strokeColor">@color/white_dark</item>
+        <item name="cardBackgroundColor">?attr/colorOnPrimary</item>
+        <item name="backgroundColor">@color/pure_black</item>
+        
+        <item name="rippleColor">@color/rippleColor</item>
+        <item name="rippleColorAccent">@color/blue_ripple</item>
+        <item name="rippleColorPrimary">@color/black_ripple</item>
+        <item name="windowBackgroundColor">?backgroundColor</item>
+        <item name="navigationViewColorAccent">?colorAccent</item>
+
+        <item name="android:colorAccent">?colorAccent</item>
+        <item name="android:titleTextAppearance">@style/ThemeOverlay.AzureKiln.ActionBar.Text</item>
+        <item name="android:textColorHint">#FF888888</item>
+        <item name="android:windowBackground">?windowBackgroundColor</item>
+        <item name="android:statusBarColor">?windowBackgroundColor</item>
+
+        <item name="bottomNavigationStyle">@style/Widget.Azure.BottomNavigationView</item>
+        <item name="chipStyle">@style/Widget.Azure.Chip</item>
+        <item name="cardViewStyle">@style/Widget.Azure.CardView</item>
+        <item name="materialCardViewStyle">@style/Widget.Azure.CardView</item>
+        <item name="buttonStyle">@style/Widget.Azure.Button</item>
+        <item name="tabStyle">@style/Widget.Azure.TabLayout</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Azure.AlertDialog</item>
+
+        <item name="cornerRadius">8dp</item>
+        <item name="cardCornerRadius">?cornerRadius</item>
+        <item name="dialogCornerRadius">?cornerRadius</item>
+        <item name="popupMenuCornerRadius">4dp</item>
+        <item name="cardColor">#212121</item>
+
+        <item name="grayColor">@color/basic_gray</item>
+        <item name="paraTextColor">#424242</item>
+        <item name="textColor">@color/white</item>
+        <item name="cardIconColor">?textColor</item>
+
+        <!-- statusBar -->
+        <item name="windowLightStatusBar">false</item>
+        <item name="windowLightNavigationBar">false</item>
+        <!-- 自定义布局属性 -->
+        <item name="toolBarColor">?backgroundColor</item>
+        <item name="toolBarTitleColor">?colorAccent</item>
+        <item name="bottomBarTextColor">@color/black</item>
+
+        <item name="termuxActivityDrawerBackground">@color/black</item>
+        <item name="termuxActivityDrawerImageTint">@color/white</item>
+    </style>
+
+    <style name="Base.Theme.LuaStudio" parent="Base.Theme">
+        <item name="cardBackgroundColor">?attr/colorOnPrimary</item>
+        <item name="backgroundColor">@color/pure_black</item>
+        <item name="colorOnPrimary">@color/pure_black</item>
+        <item name="windowLightStatusBar">false</item>
+        <item name="colorPrimary">@color/basic_blue</item>
+        <item name="windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="Theme_LuaStudio" parent="Base.Theme.LuaStudio" />
+    <style name="Theme_LuaStudio.Basic" parent="Theme_LuaStudio">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">?windowLightStatusBar</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme_LuaStudio.NoActionBar" parent="Theme_LuaStudio.Basic">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowLightStatusBar">false</item>
+    </style>
+
+</resources>

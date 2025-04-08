@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme_LuaStudio_1" parent="Base.Theme">
+        <item name="android:windowLightStatusBar">?windowLightStatusBar</item>
+        <item name="android:windowLightNavigationBar">?windowLightNavigationBar</item>
+    </style>
+
+    <style name="Base.Theme.LuaStudio" parent="Base.Theme">
+        <item name="android:windowLightStatusBar">?windowLightStatusBar</item>
+        <item name="android:windowLightNavigationBar">?windowLightNavigationBar</item>
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_file_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/file_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/twotone_folder_black_24" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:gravity="bottom"
+                android:text="文件名"
+                android:textSize="15sp"
+                android:layout_marginEnd="16dp"
+                android:textColor="?textColor"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="文件大小"
+                android:textSize="12sp"
+                android:layout_marginEnd="16dp"
+                android:textColor="?paraTextColor"
+                android:singleLine="true" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <FrameLayout
+            android:id="@+id/filelist_checkbox_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/filelist_checkbox"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:focusableInTouchMode="false"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

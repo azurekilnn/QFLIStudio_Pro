@@ -1,0 +1,37 @@
+{
+  LinearLayoutCompat;
+  orientation="vertical";
+  layout_width="fill";
+  layout_height="wrap";
+  {
+    LinearLayoutCompat;
+    orientation="vertical";
+    layout_height="wrap_content";
+    layout_weight="1";
+    layout_width="100%w";
+    gravity="center";
+    {
+      TextView;
+      textColor=text_color;
+      textSize="20sp";
+      ellipsize="end";
+      singleLine="true";
+      layout_marginLeft="20dp";
+      id="insert_code_dialog_title";
+      layout_marginTop="20dp";
+      layout_gravity="left";
+      text=gets("insert_code");
+    };
+    {
+      ListView;
+      layout_height="-2";
+      layout_margin="8dp";
+      layout_width="-1";
+      DividerHeight="0";
+      id="insert_code_dialog_listview";
+    };
+
+
+  };
+
+};

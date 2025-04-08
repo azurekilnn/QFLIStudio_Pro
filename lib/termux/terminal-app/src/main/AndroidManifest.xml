@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <provider
+            android:name=".filepicker.TermuxDocumentsProvider"
+            android:authorities="com.qflistudio.azure.documents"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+            </intent-filter>
+        </provider>
+
+        <provider
+            android:name=".app.TermuxOpenReceiver$ContentProvider"
+            android:authorities="com.qflistudio.azure.files"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="com.qflistudio.azure.permission.RUN_COMMAND" />
+
+
+        <receiver
+            android:name=".app.TermuxOpenReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".app.event.SystemEventReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".shared.activities.ReportActivity$ReportActivityBroadcastReceiver"
+            android:exported="false" />
+
+
+        <service
+            android:name=".app.TermuxService"
+            android:exported="false" />
+
+        <service
+            android:name=".app.RunCommandService"
+            android:exported="true"
+            android:permission="com.qflistudio.azure.permission.RUN_COMMAND">
+            <intent-filter>
+                <action android:name="com.qflistudio.azure.RUN_COMMAND" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".app.TermuxService"
+            android:exported="false" />
+
+        <service
+            android:name=".app.RunCommandService"
+            android:exported="true"
+            android:permission="com.qflistudio.azure.permission.RUN_COMMAND">
+            <intent-filter>
+                <action android:name="com.qflistudio.azure.RUN_COMMAND" />
+            </intent-filter>
+        </service>
+
+        <!-- https://developer.samsung.com/samsung-dex/modify-optimizing.html -->
+
+        <!-- Version < 3.0. DeX Mode and Screen Mirroring support -->
+        <meta-data
+            android:name="com.samsung.android.keepalive.density"
+            android:value="true" />
+
+        <!-- Version >= 3.0. DeX Dual Mode support -->
+        <meta-data
+            android:name="com.samsung.android.multidisplay.keep_process_alive"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+
+    </application>
+</manifest>

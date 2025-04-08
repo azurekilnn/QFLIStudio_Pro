@@ -1,0 +1,32 @@
+{
+  LinearLayoutCompat;
+  layout_height="25dp";
+  layout_width="wrap";
+  {
+    CardView;
+    radius="10dp";
+    layout_margin="4dp";
+    layout_height="20dp";
+    layout_width="wrap";
+    backgroundColor=get_theme_color("tool_bar_color");
+    {
+      LinearLayoutCompat;
+      layout_marginRight="4dp";
+      layout_marginLeft="4dp";
+      layout_width="wrap";
+      layout_height="20dp";
+      {
+        TextView;
+        layout_width="wrap";
+        layout_height="20dp";
+        singleLine=true;
+        text="Runtime Error";
+        layout_gravity="center";
+        gravity="center";
+        textColor=text_color;
+        textSize="10dp";
+        id="tab_text";
+      };
+    };
+  };
+};

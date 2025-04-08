@@ -1,0 +1,37 @@
+{
+  LinearLayoutCompat;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+  layoutTransition=newLayoutTransition();
+  {
+    FrameLayout;
+    layout_width="fill";
+    layout_height="fill";
+    create_empty_tips("page_3_empty_tips_1","page_3_empty_tips_1_tv",gets("empty_file_list_tips"));
+    create_progressbar("page_3_pb_1",true);
+    {
+      LinearLayoutCompat;
+      layout_width='fill';
+      layout_height='fill';
+      id="format_backup_list_background";
+      Visibility="8";
+      layoutTransition=newLayoutTransition();
+      {
+        SwipeRefreshLayout;
+        id="format_backup_list_pull_1";
+        {
+          RecyclerView;
+          layout_height="fill";
+          layout_width="fill";
+          paddingLeft="8dp";
+          paddingRight="8dp";
+          id="format_backup_rv";
+          paddingBottom="56dp";
+          nestedScrollingEnabled=false;
+          clipToPadding=false;
+        };
+      };
+    };
+  };
+};

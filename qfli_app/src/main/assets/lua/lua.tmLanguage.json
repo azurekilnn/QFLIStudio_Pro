@@ -1,0 +1,179 @@
+{
+  "scopeName": "source.lua",
+  "name": "Lua",
+  "fileTypes": [
+    "lua"
+  ],
+  "author": "chuniuer",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#comments-inline"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "comment": "keywords that lua",
+      "name": "keyword.control.statement",
+      "match": "\\b(and|break|do|else|elseif|end|for|function|if|in|not|or|repeat|return|then|until|while|goto)\\b"
+    },
+    {
+      "comment": "keywords that lua 2",
+      "name": "entity.other.attribute-name",
+      "match": "\\b(true|false|nil)\\b"
+    },
+    {
+      "comment": "keywords that lua 2",
+      "name": "entity.name.type",
+      "match": "\\b(local)\\b"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "include": "#comments-inline"
+        }
+      ]
+    },
+    "comments-inline": {
+      "patterns": [
+        {
+          "begin": "\\-\\-\\[\\[",
+          "captures": {
+            "0": {
+              "name": "punctuation.definition.comment.java"
+            }
+          },
+          "end": "\\]\\]",
+          "name": "comment.block.java"
+        },
+        {
+          "begin": "(^[ \\t]+)?(?=--)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.java"
+            }
+          },
+          "end": "(?!\\G)",
+          "patterns": [
+            {
+              "begin": "--",
+              "beginCaptures": {
+                "0": {
+                  "name": "punctuation.definition.comment.java"
+                }
+              },
+              "end": "\\n",
+              "name": "comment.line.double-slash.java"
+            }
+          ]
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "begin": "\"",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin"
+            }
+          },
+          "end": "\"",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end"
+            }
+          },
+          "name": "string.quoted.double",
+          "patterns": [
+            {
+              "match": "\\\\.",
+              "name": "constant.character.escape"
+            }
+          ]
+        },
+        {
+          "begin": "'",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin"
+            }
+          },
+          "end": "'",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end"
+            }
+          },
+          "name": "string.quoted.single",
+          "patterns": [
+            {
+              "match": "\\\\.",
+              "name": "constant.character.escape"
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "match": "\\b(?i:(0x\\h*)L)",
+          "name": "constant.numeric.integer.long.hexadecimal"
+        },
+        {
+          "match": "\\b(?i:(0x\\h*))",
+          "name": "constant.numeric.integer.hexadecimal"
+        },
+        {
+          "match": "\\b(?i:(0o?[0-7]+)L)",
+          "name": "constant.numeric.integer.long.octal"
+        },
+        {
+          "match": "\\b(?i:(0o?[0-7]+))",
+          "name": "constant.numeric.integer.octal"
+        },
+        {
+          "match": "\\b(?i:(0b[01]+)L)",
+          "name": "constant.numeric.integer.long.binary"
+        },
+        {
+          "match": "\\b(?i:(0b[01]+))",
+          "name": "constant.numeric.integer.binary"
+        },
+        {
+          "match": "\\b(?i:(((\\d+(\\.(?=[^a-zA-Z_])\\d*)?|(?<=[^0-9a-zA-Z_])\\.\\d+)(e[\\-\\+]?\\d+)?))J)",
+          "name": "constant.numeric.complex"
+        },
+        {
+          "match": "\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])",
+          "name": "constant.numeric.float"
+        },
+        {
+          "match": "(?<=[^0-9a-zA-Z_])(?i:(\\.\\d+(e[\\-\\+]?\\d+)?))",
+          "name": "constant.numeric.float"
+        },
+        {
+          "match": "\\b(?i:(\\d+e[\\-\\+]?\\d+))",
+          "name": "constant.numeric.float"
+        },
+        {
+          "match": "\\b(?i:([1-9]+[0-9]*|0)L)",
+          "name": "constant.numeric.integer.long.decimal"
+        },
+        {
+          "match": "\\b([1-9]+[0-9]*|0)",
+          "name": "constant.numeric.integer.decimal"
+        }
+      ]
+    }
+  }
+}

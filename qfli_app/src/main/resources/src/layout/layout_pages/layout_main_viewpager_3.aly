@@ -1,0 +1,32 @@
+{
+  LinearLayoutCompat;
+  orientation="vertical";
+  {
+    LinearLayoutCompat;
+    orientation="vertical";
+    layout_height="wrap";
+    layout_width="fill";
+    backgroundColor=get_theme_color("tool_bar_color");
+    {
+      TabLayout;
+      id="recyclebin_tab_layout";
+      TabMode=TabLayout.MODE_SCROLLABLE;
+      backgroundColor=get_theme_color("tool_bar_color");
+      layout_width="wrap";
+      layout_height="wrap";
+      layout_gravity="left";
+    };
+  };
+  {
+    ViewPager;
+    id="recyclebin_pageview";
+    layout_weight="1";
+    layout_height="fill";
+    layout_width="fill";
+    view_pages={
+      {create_linearlayout("file_recycle_bin_list_background"),gets("file_recycle_bin_text")};
+      {create_linearlayout("historical_file_backup_list_background"),gets("historical_file_backup_text")};
+      {create_linearlayout("format_backup_list_background"),gets("format_backup_text")};
+    };
+  };
+};

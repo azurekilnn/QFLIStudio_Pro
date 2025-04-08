@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "androlua/src/main/resources/src"
+		},
+		{
+			"path": "androlua/src/main/resources/public_library"
+		},
+		{
+			"path": "qfli_app/src/main/resources/src"
+		}
+	],
+	"settings": {}
+}

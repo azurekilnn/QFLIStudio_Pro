@@ -1,0 +1,11 @@
+tool_name="open_license"
+tool_name_key="open_license_text"
+tool_version="1.0"
+tool_code="1000"
+tool_introduction="查看LuaStudio+使用了哪些开源项目。"
+tool_update_log=[[1.0 (2023-07-21)]]
+tool_update_time="2023-07-21"
+tool_home_activity="main.lua"
+tool_status=true
+support_open_by_dialog=false
+debugmode=false

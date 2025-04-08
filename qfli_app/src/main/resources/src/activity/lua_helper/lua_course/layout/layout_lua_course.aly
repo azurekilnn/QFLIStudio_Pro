@@ -1,0 +1,58 @@
+{
+  LinearLayoutCompat;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+  backgroundColor=get_theme_color("background_color");
+  {
+    FrameLayout;
+    layout_width="fill";
+    backgroundColor = get_theme_color("tool_bar_color");
+    tool_bar,
+    search_bar,
+  };
+  {
+    PageView,
+    layout_height = "fill",
+    layout_width = "fill",
+    layout_weight = "1",
+    id = "pageview_id",
+    pages = {
+      {
+        LinearLayoutCompat;
+        orientation = "vertical",
+        gravity = "center",
+        layout_width = "fill",
+        layout_height = "fill",
+        id = "background",
+        {
+          GridView,
+          layout_width = "fill",
+          layout_height = "fill",
+          layout_margin = "10dp",
+          id = "gridview_1",
+          NumColumns = '2',
+          horizontalSpacing = "5dp",
+          verticalSpacing = "5dp",
+          ScrollBarStyle = ScrollView.SCROLLBARS_OUTSIDE_OVERLAY,
+        }
+      },
+      {
+        LinearLayoutCompat;
+        orientation = "vertical",
+        gravity = "center",
+        layout_width = "fill",
+        layout_height = "fill",
+        id = "background_2",
+        {
+          ListView,
+          layout_width = "fill",
+          layout_height = "fill",
+          layout_margin = "4dp",
+          id = "listview_2",
+          DividerHeight=0;
+        }
+      }
+    }
+  }
+}

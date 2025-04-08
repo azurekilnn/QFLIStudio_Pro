@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?toolBarColor"
+    android:orientation="vertical">
+
+    <!-- Folder Button -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/folder_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_ripple"
+            android:gravity="center"
+            android:src="@drawable/twotone_folder_black_24"
+            app:tint="?toolBarTitleColor" />
+
+        <!-- Title and Opened File -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/title_background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Main Title -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/main_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="@string/application_name"
+                android:textColor="?toolBarTitleColor"
+                android:textSize="20sp" />
+
+            <!-- Opened File -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/opened_file_path_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ellipsize="start"
+                android:gravity="center|start"
+                android:singleLine="true"
+                android:text="@string/file_not_open_tip"
+                android:textColor="?paraTextColor"
+                android:textSize="12sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- layoutHelperButton -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/layout_helper_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_ripple"
+            android:gravity="center"
+            android:src="@drawable/twotone_panorama_black_24"
+            android:visibility="gone"
+            app:tint="?toolBarTitleColor" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/play_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_ripple"
+            android:gravity="center"
+            android:src="@drawable/twotone_play_arrow_black_24"
+            app:tint="?toolBarTitleColor" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/undo_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_ripple"
+            android:gravity="center"
+            android:src="@drawable/twotone_undo_black_24"
+            app:tint="?toolBarTitleColor" />
+
+        <!-- moreButton -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/more_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_ripple"
+            android:gravity="center"
+            android:src="@drawable/twotone_more_vert_black_24"
+            app:tint="?toolBarTitleColor" />
+
+        <!-- Placeholder for More Layout -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/more_lay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="top" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

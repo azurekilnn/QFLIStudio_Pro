@@ -1,0 +1,23 @@
+{
+  LinearLayoutCompat;
+  layout_width='fill';
+  layout_height='wrap';
+  backgroundColor=gray_color;
+  {
+    CardView;
+    layout_width="fill";
+    backgroundColor=card_get_theme_color("background_color");
+    layout_height="wrap";
+    layout_margin="5dp";
+    Elevation='0';
+    radius="8dp";
+    {
+      TextView,
+      layout_height="fill";
+      layout_margin="12dp";
+      textSize="13sp",
+      id="content";
+      textColor=text_color;
+    };
+  };
+};

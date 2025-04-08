@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.qflistudio.azure.ui.fragment.pages.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_main_first" />
+
+    <fragment
+        android:id="@+id/navigation_widgets"
+        android:name="com.qflistudio.azure.ui.fragment.pages.SecondFragment"
+        android:label="@string/tools_text"
+        tools:layout="@layout/fragment_main_second" />
+
+    <fragment
+        android:id="@+id/navigation_recycle_bin"
+        android:name="com.qflistudio.azure.ui.fragment.pages.ThirdFragment"
+        android:label="@string/recycle_bin_text"
+        tools:layout="@layout/fragment_main_third" />
+    <fragment
+        android:id="@+id/navigation_cloud"
+        android:name="com.qflistudio.azure.ui.fragment.pages.BinFragment"
+        android:label="@string/cloud_text"
+        tools:layout="@layout/fragment_main_fourth" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.qflistudio.azure.ui.fragment.pages.AccountFragment"
+        android:label="@string/my_account"
+        tools:layout="@layout/fragment_main_fifth" />
+</navigation>

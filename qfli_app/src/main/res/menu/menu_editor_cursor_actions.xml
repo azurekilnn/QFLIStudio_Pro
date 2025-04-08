@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/goto_end"
+        android:title="@string/go_to_end" />
+    <item
+        android:id="@+id/move_up"
+        android:title="@string/move_up" />
+    <item
+        android:id="@+id/move_down"
+        android:title="@string/move_down" />
+    <item
+        android:id="@+id/move_left"
+        android:title="@string/move_left" />
+    <item
+        android:id="@+id/move_right"
+        android:title="@string/move_right" />
+    <item
+        android:id="@+id/home"
+        android:title="@string/line_home" />
+    <item
+        android:id="@+id/end"
+        android:title="@string/line_end" />
+</menu>

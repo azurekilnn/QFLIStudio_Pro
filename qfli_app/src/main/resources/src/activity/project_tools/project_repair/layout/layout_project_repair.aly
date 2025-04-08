@@ -1,0 +1,15 @@
+{
+  LinearLayoutCompat;
+  orientation='vertical';
+  layout_height='fill';
+  layout_width='fill';
+  {
+    TextView;
+    layout_height='fill';
+    gravity='center';
+    layout_gravity='center';
+    textSize='18sp';
+    layout_width='fill';
+    text='LuaStudio';
+  };
+};

@@ -1,0 +1,58 @@
+{
+  LinearLayoutCompat;
+  orientation="vertical";
+  layout_height="wrap";
+  layout_width="fill";
+  id="root_file_item";
+  {
+    LinearLayoutCompat;
+    layout_width="fill";
+    layout_height="wrap";
+    {
+      LinearLayoutCompat;
+      gravity="center";
+      layout_height="45dp";
+      layout_width="45dp";
+      {
+        ImageView;
+        id="file_img";
+        layout_height="30dp";
+        --colorFilter="#FFE91E63";
+        layout_width="30dp";
+        --src=load_icon_path("file");
+      };
+    };
+    {
+      LinearLayoutCompat;
+      gravity="center";
+      layout_height="fill";
+      layout_width="fill";
+      orientation="vertical";
+      layout_weight="1";
+      {
+        TextView;
+        id="file_name";
+        -- layout_weight="1";
+        layout_gravity="left";
+        gravity="bottom";
+        --text="文件名";
+        textSize="12sp";
+        layout_marginRight="16dp";
+        textColor=text_color;
+      };
+      {
+        TextView;
+        id="file_size";
+        --  layout_weight="1";
+        layout_gravity="left";
+        --text="文件大小";
+        textSize="10sp";
+        gravity="left";
+        layout_marginRight="16dp";
+        textColor=get_theme_color("paratext_color");
+      };
+    };
+
+  };
+
+};

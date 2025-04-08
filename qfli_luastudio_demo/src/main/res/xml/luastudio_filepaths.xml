@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <files-path name="files" path="/" />
+    <external-path name="androlua" path="AndroLua/" />
+    <external-path name="external" path="/" />
+    <external-path name="external_files" path="." />
+
+    <external-path name="luastudio" path="LuaStudio_Pro/" />
+    <external-path name="Download" path="LuaStudio_Pro/Download/"/>
+</resources>

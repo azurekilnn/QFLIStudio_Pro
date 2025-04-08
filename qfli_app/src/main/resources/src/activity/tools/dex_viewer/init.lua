@@ -1,0 +1,12 @@
+tool_name="DexViewer"
+tool_name_key="dex_viewer"
+tool_version="1.0"
+tool_code="1000"
+tool_introduction="LuaStudio+内置Dex查看器。"
+tool_update_log=[[1.0 (2023-07-21)]]
+tool_update_time="2023-07-21"
+tool_home_activity="main.lua"
+tool_value={"dex_path"}
+tool_status=true
+support_open_by_dialog=false
+debugmode=false

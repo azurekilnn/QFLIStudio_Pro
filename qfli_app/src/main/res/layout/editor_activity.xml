@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/tool_bar_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/main_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:indeterminate="true">
+
+            </com.google.android.material.progressindicator.LinearProgressIndicator>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/editor_pgs_tv_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/editor_pgs_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_margin="5dp"
+                    android:text="@string/about"
+                    android:animateLayoutChanges="true"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/editor_opeartions_bar"
+                style="@style/Widget.Azure.TabLayout"
+                android:background="?backgroundColor"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:layout_gravity="start"
+                app:tabMode="scrollable" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/editor_tab_layout"
+                android:background="?backgroundColor"
+                style="@style/Widget.Azure.TabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                app:tabMode="scrollable" />
+
+            <FrameLayout
+                android:id="@+id/home_framelayout"
+                android:layout_width="match_parent"
+                android:animateLayoutChanges="true"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/editor_background"
+                    android:layout_width="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/bottom_root_layout"
+                    android:layout_width="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical" />
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!-- 左侧滑-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/left_sidebar"
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        tools:ignore="VisualLintBounds">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/left_sidebar_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!-- 右侧滑-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/right_sidebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        tools:ignore="VisualLintBounds">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/right_sidebar_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.drawerlayout.widget.DrawerLayout>

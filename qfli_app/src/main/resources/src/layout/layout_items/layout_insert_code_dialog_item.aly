@@ -1,0 +1,20 @@
+{
+  LinearLayoutCompat;
+  layout_width="100%w";
+  orientation="vertical";
+  layout_height="wrap";
+  {
+    TextView;
+    textSize="16sp";
+    layout_margin="10dp";
+    textColor=text_color;
+    id="item_text";
+    singleLine=true;
+    layout_gravity="left";
+  };
+  {
+    TextView;
+    id="sub_content";
+    Visibility="8";
+  };
+};

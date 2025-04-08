@@ -1,0 +1,13 @@
+{
+  LinearLayout;
+  orientation="vertical";
+  layout_height="fill";
+  layout_width="fill";
+  {
+    ExpandableListView;
+    id='insert_code_expandable_lv';
+    dividerHeight='0dp';
+    layout_width='fill';
+    layout_height='fill';
+  };
+};

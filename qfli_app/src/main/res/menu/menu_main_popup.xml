@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qflistudio.azure.ui.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/twotone_search_24"
+        android:title="@string/search_project"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:iconTint="?toolBarTitleColor"
+        app:showAsAction="always|collapseActionView"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/main_create_project"
+        android:orderInCategory="0"
+        android:title="@string/create_project"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_donation"
+        android:orderInCategory="0"
+        android:title="@string/donation_text"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_contact_dev"
+        android:orderInCategory="0"
+        android:title="@string/contact_dev"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_join_qqgroup"
+        android:orderInCategory="0"
+        android:title="@string/join_qqgroup"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_project_url"
+        android:orderInCategory="0"
+        android:title="@string/project_url_text"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/import_py_env"
+        android:orderInCategory="0"
+        android:title="@string/import_py_env_text"
+        app:showAsAction="never" />
+</menu>

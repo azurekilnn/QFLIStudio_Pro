@@ -1,0 +1,3 @@
+interface ColorCallback {
+    fun on()
+}

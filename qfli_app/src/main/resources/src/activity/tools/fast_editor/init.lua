@@ -1,0 +1,12 @@
+tool_name="FastEditor"
+tool_name_key="fast_editor"
+tool_version="1.0"
+tool_code="1000"
+tool_introduction="LuaStudio+内置简易的编辑器。"
+tool_update_log=[[1.0 (2023-07-21)]]
+tool_update_time="2023-07-21"
+tool_home_activity="main.lua"
+tool_value={"lua_path"}
+tool_status=true
+support_open_by_dialog=false
+debugmode=false

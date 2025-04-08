@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:elevation="0dp">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleEnabled="false">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?toolBarColor"
+            app:titleTextAppearance="@style/BaseToolBarTitleStyle"
+            app:subtitleTextAppearance="@style/EditorToolBarSubTitleStyle"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:titleTextColor="?toolBarTitleColor">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/editor_more_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:orientation="vertical"
+                android:background="@drawable/circular_ripple"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/editor_more_btn_img"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/twotone_more_vert_black_24"
+                    android:layout_margin="8dp"
+                    app:tint="?toolBarTitleColor" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

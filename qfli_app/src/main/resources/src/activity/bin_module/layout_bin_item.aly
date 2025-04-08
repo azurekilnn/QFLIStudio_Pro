@@ -1,0 +1,91 @@
+{
+  {--title (type1)
+    LinearLayoutCompat;
+    Focusable=true;
+    layout_width="fill";
+    layout_height="wrap";
+    {
+      TextView;
+      id="title";
+      textSize=load_textsize("14dp");
+      textColor=basic_color_num;
+      layout_marginTop="8dp";
+      layout_marginLeft="16dp";
+      Typeface=load_font("common");
+    };
+  };
+
+  {--item1 (type2)
+    LinearLayoutCompat;
+    layout_width="-1";
+    layout_height="48dp";
+    gravity="center|left";
+    {
+      ImageView;
+      id="iv";
+      ColorFilter=pc(text_color);
+      layout_marginLeft="24dp";
+      layout_width="24dp";
+      layout_height="24dp";
+    };
+    {
+      TextView;
+      id="tv";
+      layout_marginLeft="16dp";
+      textSize="14dp";
+      textColor=text_color;
+      Typeface=load_font("common");
+    };
+  };
+
+  {--item_chose (type3)
+    RelativeLayout;
+    layout_width="-1";
+    layout_height="48dp";
+    {
+      LinearLayoutCompat;
+      layout_width="-1";
+      layout_height="-1";
+
+      BackgroundDrawable=drawer_item_checked_background;
+    };
+    {
+      LinearLayoutCompat;
+      layout_width="-1";
+      layout_height="-1";
+      gravity="center|left";
+      {
+        ImageView;
+        id="iv";
+        ColorFilter=basic_color_num;
+        layout_marginLeft="24dp";
+        layout_width="24dp";
+        layout_height="24dp";
+      };
+      {
+        TextView;
+        id="tv";
+        layout_marginLeft="16dp";
+        textSize="14dp";
+        textColor=basic_color_num;
+        Typeface=load_font("common");
+      };
+    };
+  };
+
+  {--divider (type4)
+    LinearLayoutCompat;
+    layout_width="-1";
+    layout_height="-2";
+    gravity="center|left";
+    onClick=function()end;
+    {
+      TextView;
+      layout_width="-1";
+      layout_height="2px";
+      background="#FFE0E0E0";
+      layout_marginTop="8dp";
+      layout_marginBottom="8dp";
+    };
+  };
+};

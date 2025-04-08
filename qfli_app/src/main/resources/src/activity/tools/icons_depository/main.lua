@@ -1,0 +1,105 @@
+set_style()
+content_view={
+  LinearLayoutCompat;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+  backgroundColor=get_theme_color("background_color");
+  {
+    LinearLayoutCompat;
+    orientation="vertical";
+    gravity="center";
+    layout_width="fill";
+    layout_height="fill";
+    id="background_1";
+    layoutTransition=newLayoutTransition();
+    {
+      HorizontalScrollView;
+      layout_width="fill";
+      layout_height="wrap";
+      layout_marginLeft="16dp";
+      layout_marginRight="16dp";
+      layout_marginBottom="8dp";
+      horizontalScrollBarEnabled=false;
+      layoutTransition=newLayoutTransition();
+      {
+        ChipGroup;
+        id="chipgroup_1";
+        layout_width="fill";
+        layoutTransition=newLayoutTransition();
+        singleLine=true;
+        singleSelection=true;
+      };
+    };
+    {
+      LinearLayoutCompat;
+      orientation="vertical";
+      layout_width="fill";
+      layout_height="fill";
+      backgroundColor=gray_color;
+      {
+        ProgressBar;
+        layout_gravity="center";
+        id="progress_bar_1";
+        layout_width="fill";
+        Visibility="8";
+        indeterminate=true;
+        style="?android:attr/progressBarStyleHorizontal";
+      },
+      {
+        LinearLayoutCompat;
+        orientation="vertical";
+        layout_width="fill";
+        layout_height="fill";
+        {
+          FrameLayout;--帧布局
+          layout_width="fill";
+          layout_height="fill";
+          create_empty_tips("empty_tip_background","empty_tip",gets("search_action_tips"));
+          {
+            LinearLayoutCompat;
+            orientation="vertical";
+            layout_width="fill";
+            layout_height="fill";
+            {
+              PullingLayout,
+              layout_width="fill",
+              id="pull_layout_1",
+              --PullDownEnabled=true,
+              PullUpEnabled=true,
+              {
+                GridView,
+                numColumns="4",
+                layout_width="fill",
+                layout_height="fill",
+                VerticalScrollBarEnabled=false,
+                OverScrollMode=2,
+                id="gridview_1",
+              },
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+if not dlg_mode then
+  setCommonView(content_view,"icon_depository","back_with_search_mode")
+  import "system.system_dialogs"
+  value=...
+  activity_dir=activity.getLuaDir()
+  import "shared_codes"
+  pcall(load_shared_codes)
+
+  search_button.onClick=function()
+    tool_bar_id.setVisibility(8)
+    search_bar_id.setVisibility(0)
+  end
+
+  search_bar_cancel_button.onClick=function()
+    tool_bar_id.setVisibility(0)
+    search_bar_id.setVisibility(8)
+  end
+
+end

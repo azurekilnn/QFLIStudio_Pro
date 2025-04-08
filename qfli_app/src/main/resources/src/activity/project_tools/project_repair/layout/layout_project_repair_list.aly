@@ -1,0 +1,19 @@
+{
+  LinearLayoutCompat;
+  orientation='vertical';
+  layout_height='fill';
+  layout_width='fill';
+  backgroundColor=gray_color;
+  tool_bar;
+  {
+    SwipeRefreshLayout,
+    id="swipe_refresh_layout",
+    {
+      ListView;
+      layout_width="-1";
+      layout_height="-1";
+      id="project_repair_list";
+      DividerHeight=0;
+    };
+  };
+};

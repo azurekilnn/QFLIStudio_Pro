@@ -1,0 +1,125 @@
+[versions]
+jvm-target = "17"
+activityCompose = "1.9.3"
+agp = "8.6.1"
+androidxAnnotationVersion = "1.3.0"
+annotation = "1.3.0"
+annotationVersion = "1.9.1"
+commonsCompress = "1.21"
+commonsIo = "2.13.0"
+compose = "1.5.0"
+composeBom = "2024.10.01"
+datastorePreferencesCoreVersion = "1.0.0"
+foundation = "1.7.5"
+guava = "32.0.1-jre"
+hiddenapibypass = "2.0"
+kotlin = "2.0.10"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+browser = "1.8.0"
+constraintlayout = "2.2.1"
+multidex = "2.0.1"
+navigationFragmentKtx = "2.8.9"
+navigationUiKtx = "2.8.9"
+markwonVersion = "4.6.2"
+swiperefreshlayout = "1.1.0"
+glideVersion = "4.13.2"
+gsonVersion = "2.11.0"
+okHttpVersion = "5.0.0-alpha.10"
+soraEditor = "0.23.4"
+tbssdkVersion = "44286"
+terminalEmulator = "v0.119.0-beta.1"
+terminalView = "v0.119.0-beta.1"
+termuxAmLibrary = "v2.0.0"
+tsBinding = "4.3.1"
+lsp4j = "0.23.1"
+androidxAnnotation = "1.9.1"
+utilcodex = "1.31.1"
+androidxWindow = "1.0.0-alpha09"
+xz = "1.5"
+recyclerview = "1.4.0"
+
+[libraries]
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+androidx-compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+androidx-compose-tooling = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "compose" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+androidx-core = { module = "androidx.core:core", version.ref = "coreKtx" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferencesCoreVersion" }
+androidx-datastore-preferences-core = { module = "androidx.datastore:datastore-preferences-core", version.ref = "datastorePreferencesCoreVersion" }
+androidx-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
+androidx-material3 = { module = "androidx.compose.material3:material3" }
+androidx-multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata" }
+androidx-ui = { module = "androidx.compose.ui:ui" }
+androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-window = { module = "androidx.window:window", version.ref = "androidxWindow" }
+commons-compress = { module = "org.apache.commons:commons-compress", version.ref = "commonsCompress" }
+commons-io = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+google-guava = { module = "com.google.guava:guava", version.ref = "guava" }
+hiddenapibypass = { module = "org.lsposed.hiddenapibypass:hiddenapibypass", version.ref = "hiddenapibypass" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "browser" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+# markwon
+markwon-core = { group = "io.noties.markwon", name = "core", version.ref = "markwonVersion" }
+markwon-editor = { group = "io.noties.markwon", name = "editor", version.ref = "markwonVersion" }
+markwon-ext-strikethrough = { group = "io.noties.markwon", name = "ext-strikethrough", version.ref = "markwonVersion" }
+markwon-linkify = { group = "io.noties.markwon", name = "linkify", version.ref = "markwonVersion" }
+markwon-recycler = { group = "io.noties.markwon", name = "recycler", version.ref = "markwonVersion" }
+markwon-image = { group = "io.noties.markwon", name = "image", version.ref = "markwonVersion" }
+markwon-image-glide = { group = "io.noties.markwon", name = "image-glide", version.ref = "markwonVersion" }
+bumptech-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
+squareup-okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttpVersion" }
+google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+sora-editor-bom = { group = "io.github.Rosemoe.sora-editor", name = "bom", version.ref = "soraEditor" }
+sora-editor-language-textmate = { group = "io.github.Rosemoe.sora-editor", name = "language-textmate" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "androidxAnnotation" }
+androidx-collection = { module = "androidx.collection:collection", version = "1.4.2" }
+desugar = { module = "com.android.tools:desugar_jdk_libs", version = "2.0.4" }
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.8.0" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.8.4" }
+gms-instantapps = { module = "com.google.android.gms:play-services-instantapps", version = "18.1.0" }
+tencent-tbssdk = { module = "com.tencent.tbs:tbssdk", version.ref = "tbssdkVersion" }
+terminal-emulator = { module = "com.github.termux.termux-app:terminal-emulator", version.ref = "terminalEmulator" }
+terminal-view = { module = "com.github.termux.termux-app:terminal-view", version.ref = "terminalView" }
+termux-am-library = { module = "com.termux:termux-am-library", version.ref = "termuxAmLibrary" }
+tree-sitter-java = { module = "com.itsaky.androidide.treesitter:tree-sitter-java", version.ref = "tsBinding" }
+tree-sitter = { module = "com.itsaky.androidide.treesitter:android-tree-sitter", version.ref = "tsBinding" }
+lsp4j = { module = "org.eclipse.lsp4j:org.eclipse.lsp4j", version.ref = "lsp4j" }
+leakcanary = { module = "com.squareup.leakcanary:leakcanary-android", version = "2.13" }
+jcodings = { module = "org.jruby.jcodings:jcodings", version = "1.0.58" }
+joni = { module = "org.jruby.joni:joni", version = "2.2.1" }
+snakeyaml-engine = { module = "org.snakeyaml:snakeyaml-engine", version = "2.7" }
+jdt-annotation = { module = "org.eclipse.jdt:org.eclipse.jdt.annotation", version = "2.3.0" }
+tests-google-truth = { module = "com.google.truth:truth", version = "1.4.2" }
+tests-robolectric = { module = "org.robolectric:robolectric", version = "4.10" }
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
+xz = { module = "org.tukaani:xz", version.ref = "xz" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+maven-publish = { id = "com.vanniktech.maven.publish.base", version = "0.29.0" }
+jetbrains-kotlin-plugin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

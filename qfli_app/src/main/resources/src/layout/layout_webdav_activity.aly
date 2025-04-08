@@ -1,0 +1,65 @@
+{
+  LinearLayoutCompat;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+  backgroundColor=get_theme_color("background_color");
+  {
+    FrameLayout,
+    layout_width="fill",
+    layout_height="fill",
+    {
+      LinearLayoutCompat;
+      layout_width='fill';
+      layout_height='fill';
+      Visibility="8";
+      id="empty_tips_3";
+      {
+        TextView;
+        layout_height='fill';
+        gravity='center';
+        layout_gravity='center';
+        textSize='15sp';
+        layout_width='fill';
+        text=("暂无云端工程");
+        textColor=text_color;
+      };
+    };
+    {
+      LinearLayoutCompat;
+
+      id="progress_background_3";
+      orientation="vertical";
+      layout_height="fill";
+      layout_width="fill";
+      gravity="center";
+
+      {
+        ProgressBar;
+        layout_gravity="center";
+        id="progress_bar_3";
+      }
+    };
+    {
+      LinearLayoutCompat;
+      layout_width='fill';
+      layout_height='fill';
+      id="webdav_project_list_background";
+      Visibility="8";
+
+      {
+        SwipeRefreshLayout,
+        --layout_marginTop="15dp";
+        id="pull_3",
+        {
+          ListView;
+          layout_width="fill";
+          layout_height="fill";
+          id="webdav_project_list_id";
+          DividerHeight=0;
+        };
+      };
+    };
+
+  };
+};
